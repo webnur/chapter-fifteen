@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #a29bfe;
+        }
+
+    h2 {
+        text-align: center;
+    }
+    .box {
+        background-color: aquamarine;
+        width: 400px;
+        height: 200px;
+    }
+    </style>
+
+</head>
+<body>
+    <!-- <h1>test webpack</h1>
+    <p>alhamdulilah webpack jamela dur holo</p> -->
+
+    <h2 id="title">DOM START IN javascript</h2>
+
+    <div class="container" id="cont">
+        <p>hello bangladesh</p>
+        <!-- <p class="load" name="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam odit eos quos facilis distinctio suscipit non nam ipsa libero.</p>
+        <p class="load">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam odit eos quos facilis distinctio suscipit non nam ipsa libero.</p>
+        <p class="load">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam odit eos quos facilis distinctio suscipit non nam ipsa libero. 20
+        </p> -->
+
+        <ul class="ami" id="list">
+            <li id="list-item-one">one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+
+        <button class="btn btn-success" id="btn">Add Me</button>
+
+        <div class="box my-5" id="box">
+
+            <p>(<span id="x-value">0</span>,
+                <span id="y-value"> 0</span>)
+            </p>
+        </div>
+
+
+        <h2>next siblings</h2>
+
+        <div class="mb-3">
+            <label for="name" class="form-label">What Is Your Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Your Name">
+            <p id="show-name"></p>
+          </div>
+
+          <div class="my-5">
+              <label >Choose Your Skils</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="C Programing " id="flexCheckDefault" name="skills">
+                <label class="form-check-label" for="flexCheckDefault">
+                  C Programing
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Java Programing " id="flexCheckChecked" name="skills">
+                <label class="form-check-label" for="flexCheckChecked">
+                 java Programing
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="javascript " id="flexCheckChecked" name="skills">
+                <label class="form-check-label" for="flexCheckChecked">
+                 javascript
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Python " id="flexCheckChecked" name="skills">
+                <label class="form-check-label" for="flexCheckChecked">
+                 Python
+                </label>
+            </div>
+
+            <p class="lead"><strong>Selected Skills</strong>
+                <span id="result"></span>
+            </p>
+        </div>
+
+            <!-- start form handling part 214 -->
+
+        <form id="form">
+            <div class="mb-3">
+                <label for="nam" class="form-label">What Is Your Name</label>
+                <input type="text" class="form-control" id="nam" name="name" placeholder="Enter Your Name Here">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">What Is Your Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email Here" name="email">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">What Is Your Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Password" name="password">
+            </div>
+
+            
+            <div class="md-3">
+                <label for="Country" class="form-label">Select Your Country</label>
+                <select id="Country" class="form-select">
+                  <option value="Bangladesh">bangladesh</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Afganisthan">Afganisthan</option>
+                  <option value="Qatar">Qatar</option>
+                </select>
+              </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+                <!--     Ajax Start  part 216       -->
+
+          <button id="load" class="btn btn-primary my-5"> Load Posts</button>
+
+          <ul id="posts" class="list-group"></ul>
+
+
+          <!--      Ajax Post Request part 217    -->
+
+          <form id="post-form">
+              <label><strong>Please fill the Form</strong></label>
+              <div class="form-group">
+                  <label for="title">Please Provite Your Title</label>
+                  <input type="text"  name="title" id="title" class="form-control" placeholder="Enter Title">
+
+              </div>
+              <div class="form-group">
+                  <label for="body">Please Provide a Description</label>
+                  <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
+              </div>
+
+              <br>
+              <input class="btn btn-primary" type="submit" value="submit">
+          </form>
+          <br>
+          <ul id="form-post" class="list-group my-5"></ul>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
